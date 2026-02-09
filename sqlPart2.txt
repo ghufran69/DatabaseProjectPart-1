@@ -1,0 +1,45 @@
+1. Definition and Purpose of the SELECT Statement:
+
+The SELECT statement is a fundamental command in SQL used to retrieve data from a database. It allows users to view information stored in tables without modifying the data. By using SELECT, we can display all records in a table, retrieve specific columns, or filter results based on conditions. The main purpose of SELECT is data retrieval, which helps users analyze, search, and understand stored information.
+
+2. Examples of Basic SELECT Queries
+
+Example 1: Display all records from a table
+
+SELECT * FROM book;
+
+Explanation:
+This query displays all columns and all rows from the table named book. The asterisk (*) means “select everything.”
+
+Example 2: Display specific columns
+SELECT bookTitle, price FROM book;
+Explanation:
+This query retrieves only the book title and price columns instead of the entire table.
+
+Example 3: Display data from another table
+SELECT MfullName, MemberEmail FROM members;
+Explanation:
+This query shows the names and emails of members, focusing only on relevant information.
+
+
+3. Examples of WHERE, ORDER BY, and DISTINCT
+
+WHERE Example
+SELECT * FROM book
+WHERE price > 10;
+Explanation:
+This query retrieves only books with a price greater than 10. The WHERE clause filters results based on a condition.
+ORDER BY Example
+SELECT * FROM book
+ORDER BY price DESC;
+Explanation:
+This query sorts books by price in descending order, meaning from highest to lowest.
+
+DISTINCT Example:
+
+SELECT DISTINCT bookGener FROM book;
+Explanation:
+This query shows unique values of book genres without repeating duplicates.
+
+4. Why SELECT is Fundamental to SQL
+The SELECT statement is fundamental because retrieving data is the primary purpose of a database. Organizations store large amounts of data, and SELECT allows users to search, analyze, and generate useful information from that data. Without SELECT, databases would only store information but not provide a way to access or use it effectively.

@@ -1,0 +1,6 @@
+challenges faced:
+At the beginning, I was confused about the correct syntax of SELECT statements, and remembering when to use WHERE, AND, and OR was sometimes difficult. I also made small syntax mistakes, such as missing quotes or writing comparison operators incorrectly. Understanding the difference between DISTINCT, LIKE, and ORDER BY needed some practice. In some cases, queries did not return results, so I had to carefully check the data and conditions. Combining multiple conditions in one query was challenging at first, and using JOIN to connect tables was new to me and required more attention to understand the relationships.
+
+
+Concepts I Learned:
+In this project, I learned how to use SQL SELECT queries to retrieve and filter data from different tables. I practiced using conditions such as WHERE, AND, OR, and comparison operators, as well as sorting results with ORDER BY and removing duplicates using DISTINCT. I also learned how to search for patterns using LIKE and how to handle NULL values. In addition, I understood the basic idea of JOIN and how it is used to connect tables and retrieve related data. Overall, this project helped me improve my understanding of how databases work and made me more confident in writing SQL queries.

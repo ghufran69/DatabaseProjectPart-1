@@ -269,3 +269,8 @@ DROP TABLE staff;
 DROP TABLE members;
 DROP TABLE librarys;
 
+select libraryName, libLocation from librarys;
+select bookTitle,bookGener,price from book
+select MfullName,MemberEmail from members
+select staffID,staffFullName,staffPosition from staff
+

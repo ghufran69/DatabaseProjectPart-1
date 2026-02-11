@@ -1,4 +1,4 @@
-
+    
 
 -- DAY 1
 --part 1 ,task 1.1 Display all records from the Libraries table
@@ -180,3 +180,32 @@ and (s.staffposition = 'Assistant' or s.staffposition = 'Clerk');
 select b.* from book b
 left join reviewbook r on b.bookid = r.booknum
 where r.booknum is null;
+
+
+--Practice Tasks - INNER JOIN
+--Part A
+--task 2.1
+--I already linked the relationship in one table
+
+--task 2.2
+select staffFullName,staffPosition,libLocation
+from staff inner join librarys on libID=libraryID ;
+
+--Task 2.3: Display all books with their library information.
+--Columns needed: Book Title, Genre, Price, Library Name, Library Location
+
+select bookTitle,bookGener,price,libraryName,libLocation 
+from book inner join librarys on librID=libraryID;
+
+
+--Task 2.4: Show all reviews with member names.
+--Columns needed: Member FullName, Rating, Comments, ReviewDate
+--I already linked the relationship in one table
+
+--Task 2.5: Display all reviews with book titles.
+--Columns needed: Book Title, Rating, Comments, ReviewDate
+--I already linked the relationship in one table
+
+--Task 2.6: Show all payments with loan information.
+--Columns needed: LoanID, PaymentDate, Amount, PaymentMethod, Loan Status
+select PaymentDate,Amount,Method,loanStatuse from Payments inner join loans on LoanDa=loanDate;
